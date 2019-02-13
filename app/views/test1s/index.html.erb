@@ -1,0 +1,13 @@
+<%= form_for(@test1) do |f|%>
+    <div class="field">
+    <%= f.label :isbn %> <br />
+    <%= f.text_field :isbn, size: 25 %><br/>
+    <%= f.label :title %>
+    <%= f.text_field :title, size: 25 %>
+    </div>
+    <%= @zzz %>
+    <form action="/test1s/view" method="post">
+    <div class="actions">
+    <%= f.submit %>
+    </div>
+    <% end %>

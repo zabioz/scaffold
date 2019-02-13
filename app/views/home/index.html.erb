@@ -1,0 +1,9 @@
+<h1>Home#index</h1>
+<% @posts.each do |f|%>
+    <a href="<%= ("/home/show/" + f.id.to_s )%>">
+    <%= f.post_isbn %>
+    </a> <br />
+    <% end %>
+<a href="/home/add">
+<button> new  </button>
+</a>
